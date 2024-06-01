@@ -15,8 +15,8 @@ class TShirt {
 }
 
 tshirts = [
-    new TShirt('Komori Soda', 'A cute black shirt with a pink Komori Soda print.', 'public/shirt1.jpg', ['black', 'soda', 'pink', 'animal'], true),
-    new TShirt('Cat King', 'A fat cat sitting in a lavender colored castle as a throne.', 'public/shirt2.jpg', ['white', 'purple, lavender', 'cat', 'castle', 'animal']),
+    new TShirt('Komori Soda', 'A black shirt with a Komori Soda print.', 'public/shirt1.jpg', ['black', 'soda', 'pink', 'animal'], true),
+    new TShirt('Cat King', 'A fat cat sitting in castle as a throne.', 'public/shirt2.jpg', ['white', 'purple, lavender', 'cat', 'castle', 'animal']),
     new TShirt('Moon cat', 'A cute vampire cat sitting on a moon', 'public/shirt3.jpg', ['pink', 'cat', 'moon','blue','vampire', 'animal']),
     new TShirt('Zombie Teddy', 'A cute plush bear sewn from different parts.', 'public/shirt4.jpg', ['bear', 'pink', 'animal', 'zombie']),
     new TShirt('Goth Cat', 'A pastel goth skeleton cat.', 'public/shirt5.webp', ['black', 'cat', 'skeleton', 'pastel', 'goth', 'animal']),
@@ -32,11 +32,11 @@ tshirts = [
 ];
 
 const audioOn = new Audio("public/click.wav");
-audioOn.volume = 0.3;
+audioOn.volume = 0.1;
 const audioOff = new Audio("public/click-off.wav");
-audioOff.volume = 0.3;
+audioOff.volume = 0.1;
 const select = new Audio("public/select.wav");
-select.volume = 0.2;
+select.volume = 0.01;
 
 const ns = "http://www.w3.org/2000/svg";
 
@@ -141,9 +141,6 @@ function displayShirt(tshirt, gridItem, index) {
     const separator = document.getElementById('search-bar');
     separator.scrollIntoView({behavior: "smooth"})
 
-    // $('html,body').animate({
-        // scrollTop: $("#search-bar").offset().top},
-        // 'slow');
 }
 
 useFilterBar = function () {

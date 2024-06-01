@@ -159,6 +159,24 @@ body {
     text-align: center;
     font-family: "Roboto Slab", serif;
     font-size: 1.2rem;
+    transition: outline 0.1s;
+    user-select: none
+}
+
+input[type="checkbox"] {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 5px;
+    width: 1.5em;
+    height: 1.5em;
+    border: 2px solid var(--celadon);
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--carnation-pink);
 }
 
 .filter-search {
@@ -253,11 +271,12 @@ body {
 
     #current-shirt-desc {
         margin: 1.5em;
+        margin-bottom: 1em;
         font-size: 1.7rem;
     }
 
     .current-shirt {
-        width: 50%;
+        max-width: 50%;
     }
 
     #current-heart {
@@ -270,7 +289,7 @@ body {
 
     .grid {
         display: grid;
-        margin: 0 2em 1em;
+        margin: 0 2em 2em;
         grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
     }
 
