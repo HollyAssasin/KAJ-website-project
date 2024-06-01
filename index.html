@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-title">
+                <a href="/">~ Cute Core Page ~</a>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="left-side">
+            <div class="current-shirt-container">
+                <h2 id="current-shirt-name">Current T-Shirt</h2>
+                <img class="current-shirt" src="public/shirt1.jpg" alt="Current T-Shirt" id="current-shirt-img">
+                <p id="current-shirt-desc">Description of the current T-Shirt goes here.</p>
+                <p id="current-shirt-tags">Tags here</p>
+                <button id="like-button">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="current-heart" data-index="0" class="liked">
+                        <circle cx="12" cy="12" r="11" stroke="black" id="svg-border" />
+
+                        <path id="svg-heart"
+                            d="m17.64625,9.82956c0,-1.55899 -1.31683,-2.82312 -2.94107,-2.82312c-1.21394,0 -2.25662,0.70641 -2.70518,1.71458c-0.44856,-1.00817 -1.49124,-1.71458 -2.70581,-1.71458c-1.62298,0 -2.94044,1.26413 -2.94044,2.82312c0,4.52955 5.64625,7.52833 5.64625,7.52833s5.64625,-2.99879 5.64625,-7.52833z" />
+
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="separator" id="separator"></div>
+        <div class="right-side">
+            <div class="filter-buttons">
+                <input type="text" placeholder="OR Ex: Pink, cat" oninput="useFilterBar()" autofocus="true" class="filter-search" id="search-bar">
+                <label class="custom-check">Liked
+                    <input type="checkbox" onclick="useFilterBar()" class="filter-button"></button>
+                </label>
+            </div>
+            <div class="grid" id="grid">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
