@@ -1,5 +1,6 @@
 # KAJ-website-project
 Semester project for the User Application Course at CVUT.
+See the website [here](https://hollyassasin.github.io/KAJ-website-project/?shirt=0)
 
 ## Technologies
 - Made in Pure JS and CSS.
